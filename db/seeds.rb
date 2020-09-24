@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do
+    Weed.create(
+      strain: Faker::Cannabis.strain,
+      type: Faker::Cannabis.type,
+      brand: Faker::Cannabis.brand
+    )
+  end
+
+puts "Seeded database"
