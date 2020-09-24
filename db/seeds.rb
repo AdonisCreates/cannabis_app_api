@@ -8,7 +8,7 @@
 
 100.times do
     Weed.create(
-      strain: Faker::Cannabis.strain,
+      strain: Faker::Hipster.sentence(word_count: 1),
       type: Faker::Cannabis.type,
       brand: Faker::Cannabis.brand
     )
